@@ -35,7 +35,7 @@ int CAddrInfo::GetNewBucket(const std::vector<unsigned char> &nKey, const CNetAd
     return hash2 % ADDRMAN_NEW_BUCKET_COUNT;
 }
 
-bool CAddrInfo::IsTerrible(int64 nNow) const
+bool CAddrInfo::IsTerrible(int64 nNow) cgatorcoinonst
 {
     if (nLastTry && nLastTry >= nNow-60) // never remove things tried the last minute
         return false;
