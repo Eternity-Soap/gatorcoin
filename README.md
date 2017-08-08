@@ -8,6 +8,6 @@ This is to be a very simple clone of Litecoin v0.8.7.5. I wanted to make a crypt
  - Change network parameters
  - Change alertnet
  - Update gitian
- - Address Identifiers
+ - Address Identifiers*
  - Transaction attributes?
 
