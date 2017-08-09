@@ -10,6 +10,7 @@ This is to be a very simple clone of Litecoin v0.8.7.5. I wanted to make a crypt
 - Reward cut in half every 262.8k blocks, about 4 years
 - Maximum coin supply will about 8146800 coins, and will be reached in 20 years
 - Mined coins take 50 blocks to mature
+- Addresses start with a "G"
 
 # Completed:
 - Unique network attributes made
