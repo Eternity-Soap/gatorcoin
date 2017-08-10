@@ -33,4 +33,4 @@ If you've ever wanted to learn more about cryptocurrencies, this one outta do fi
 ## Mining
 Before I go any further: In case it needs to be said, DO NOT abuse the poor CISE equipment to mine this. 
 
-TODO: Mining instructions. 
+[Mining Instructions](doc/mining.md)
