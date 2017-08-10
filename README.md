@@ -17,7 +17,9 @@ This is to be a very simple clone of Litecoin v0.8.7.5. I wanted to make a crypt
 - Blockchain parameters set
 - Testnet genesis block mined
 - Testnet used to verify everything is working (it is, I think)
+- Mainnet genesis block mined
+- New graphics (mostly)
 
 # TODO:
- - Mine mainnet genesis block
- - New graphics
+ - New mainnet splash image
+ - Cross compile windows executables
