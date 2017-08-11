@@ -32,6 +32,9 @@ Because the Ubuntu suite that I would need to successfully make Linux binaries h
 # So.. What do I do with this?
 If you've ever wanted to learn more about cryptocurrencies, this one outta do fine for getting some first hand experience with them. If you're like me and wanted to know what it was like to be able to solo mine one that was bitcoin derived, than go at it! Other than that though, use it for whatever you like, whether that be turning it into a meme, some sort of inside joke or a fun commodity. Use your *imagination* or something. 
 
+# I like this, how can I help?
+Well, you can start by telling your friends and having their friends tell their friends etc... A healthy network will have a large amount of peers as well as enough miners to keep a steady hashrate. Perhaps of equal importance however would be node hosting. Without plenty of nodes, clients will have a hard time connecting to the network. As of this writing there are only one or two, and if they go down new clients will not be able to connect to the network automatically. If you have an old computer or something like a raspberry pi you can host a node quite easily on a windows or linux system. Setting up a Gatorcoin node is the same for bitcoin/litecoin, so if you need help a google search should do the trick. Just remember what version of litecoin Gatorcoin is based off of and that you will need to open port 1853 on your network. If you do decide to host a node, contact me and I'll hardcode it into the software so that new clients can connect to it. 
+
 ## Mining
 Before I go any further: In case it needs to be said, DO NOT abuse the poor CISE equipment to mine this. 
 
