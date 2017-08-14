@@ -71,10 +71,10 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 840000;
-        consensus.BIP34Height = 710000;
+        consensus.BIP34Height = 710000;  //BIP34: Switch to V2 blocks
         consensus.BIP34Hash = uint256S("fa09d204a83a768ed5a7c8d441fa62f2043abf420cff1226c7b4329aeb9d51cf");
-        consensus.BIP65Height = 918684; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a
-        consensus.BIP66Height = 811879; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894
+        consensus.BIP65Height = 918684; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a Integrity measure
+        consensus.BIP66Height = 811879; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894 Integrity measure
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
         consensus.nPowTargetSpacing = 2.5 * 60;
@@ -120,11 +120,11 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x36f2fdb78f0702f61eadc6a78bfadd8cae9c5399c77b7e3f6a3f799d8f762b0a"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-a.gatorcoin.loshan.co.uk", true));
+        /*vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-a.gatorcoin.loshan.co.uk", true));
         vSeeds.push_back(CDNSSeedData("thrasher.io", "dnsseed.thrasher.io", true));
         vSeeds.push_back(CDNSSeedData("gatorcointools.com", "dnsseed.gatorcointools.com"));
         vSeeds.push_back(CDNSSeedData("gatorcoinpool.org", "dnsseed.gatorcoinpool.org"));
-        vSeeds.push_back(CDNSSeedData("koin-project.com", "dnsseed.koin-project.com"));
+        vSeeds.push_back(CDNSSeedData("koin-project.com", "dnsseed.koin-project.com")); */
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
