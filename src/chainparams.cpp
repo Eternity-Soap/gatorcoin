@@ -81,7 +81,7 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 6048; // 75% of 8064
-        consensus.nMinerConfirmationWindow = 8064; // nPowTargetTimespan / nPowTargetSpacing * 4
+        consensus.nMinerConfirmationWindow = 360; // nPowTargetTimespan / nPowTargetSpacing * 4
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
@@ -164,8 +164,8 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 262800;
-        consensus.BIP34Height = 76;
-        consensus.BIP34Hash = uint256S("8075c771ed8b495ffd943980a95f702ab34fce3c8c54e379548bda33cc8c0573");
+        consensus.BIP34Height = 1;
+        consensus.BIP34Hash = uint256S("");
         consensus.BIP65Height = 200; // 8075c771ed8b495ffd943980a95f702ab34fce3c8c54e379548bda33cc8c0573
         consensus.BIP66Height = 200; // 8075c771ed8b495ffd943980a95f702ab34fce3c8c54e379548bda33cc8c0573
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
@@ -174,7 +174,7 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
-        consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
+        consensus.nMinerConfirmationWindow = 90; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
