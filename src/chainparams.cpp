@@ -255,7 +255,7 @@ public:
         consensus.BIP66Height = 1251; // BIP66 activated on regtest (Used in rpc activation tests)
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // two weeks
-        consensus.nPowTargetSpacing = 2.5 * 60;
+        consensus.nPowTargetSpacing = 8 * 60;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
         consensus.nRuleChangeActivationThreshold = 108; // 75% for testchains
@@ -283,10 +283,10 @@ public:
         nDefaultPort = 19444;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1296688602, 0, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1503085389, 0, 0x207fffff, 1, 16 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9"));
-        assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        assert(genesis.hashMerkleRoot == uint256S("0x1353929e2cfc247bb3e318e7951d73d5b9edcea33acdf978a0405588dfac048b"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -298,7 +298,7 @@ public:
 
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of
-            ( 0, uint256S("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9"))
+            ( 0, uint256S("0x1353929e2cfc247bb3e318e7951d73d5b9edcea33acdf978a0405588dfac048b"))
         };
 
         chainTxData = ChainTxData{
