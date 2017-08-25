@@ -73,8 +73,8 @@ public:
         consensus.nSubsidyHalvingInterval = 262800;
         consensus.BIP34Height = 1;  //BIP34: Switch to V2 blocks
         consensus.BIP34Hash = uint256S("569f31259faa198957458ce2bef2c7bf1fb0f1d5056e80764471a766ac458f24");
-        consensus.BIP65Height = 918684; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a Integrity measure
-        consensus.BIP66Height = 811879; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894 Integrity measure
+        consensus.BIP65Height = 2100; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a Integrity measure
+        consensus.BIP66Height = 2100; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894 Integrity measure
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 0.5 * 24 * 60 * 60; // 0.5 days
         consensus.nPowTargetSpacing = 8 * 60;
@@ -100,7 +100,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000025902590");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x1673fa904a93848eca83d5ca82c7af974511a7e640e22edc2976420744f2e56a"); //1155631
+        consensus.defaultAssumeValid = uint256S("0xd7ee8b8d1515e57cfd7b15b4d410336ceff19bb1b22ff5a761a95660cc18773c"); //1175
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -142,15 +142,16 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (  0, uint256S("0x538017edc66ba7f7bdda94b61b8443adabd4e0e6b62501de81040260b29f9646"))
+            (   0, uint256S("0x538017edc66ba7f7bdda94b61b8443adabd4e0e6b62501de81040260b29f9646"))
+            (1170, uint256S("0x21ed271419ab6c887940e105fb47acf45f79d57e00c822509d0d485ad5598619"))
         };
 
         chainTxData = ChainTxData{
             // Data as of block b44bc5ae41d1be67227ba9ad875d7268aa86c965b1d64b47c35be6e8d5c352f4 (height 1155626).
-            1502311635, // * UNIX timestamp of last known number of transactions
-            0,  // * total number of transactions between genesis and that timestamp
+            1503622214, // * UNIX timestamp of last known number of transactions
+            1186,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
-            0.01     // * estimated number of transactions per second after that timestamp
+            0.3     // * estimated number of transactions per second after that timestamp
         };
     }
 };
