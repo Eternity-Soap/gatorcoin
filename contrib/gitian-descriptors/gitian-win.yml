@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/gatorcoin-project/gatorcoin.git"
+- "url": "https://github.com/schyczewski/gatorcoin.git"
   "dir": "gatorcoin"
 files: []
 script: |
