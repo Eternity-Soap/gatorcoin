@@ -28,7 +28,7 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/gatorcoin-project/gatorcoin.git"
+- "url": "https://github.com/schyczewski/gatorcoin.git"
   "dir": "gatorcoin"
 files:
 - "MacOSX10.11.sdk.tar.gz"
