@@ -30,7 +30,7 @@
 #define COPYRIGHT_HOLDERS_FINAL "The Litecoin Core developers"
 
 /* Replacement for %s in copyright holders string */
-#define COPYRIGHT_HOLDERS_SUBSTITUTION "Gatorcoin Core"
+#define COPYRIGHT_HOLDERS_SUBSTITUTION "Litecoin Core"
 
 /* Copyright year */
 #define COPYRIGHT_YEAR 2017
