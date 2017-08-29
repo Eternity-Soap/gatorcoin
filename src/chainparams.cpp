@@ -73,8 +73,8 @@ public:
         consensus.nSubsidyHalvingInterval = 262800;
         consensus.BIP34Height = 1;  //BIP34: Switch to V2 blocks
         consensus.BIP34Hash = uint256S("569f31259faa198957458ce2bef2c7bf1fb0f1d5056e80764471a766ac458f24");
-        consensus.BIP65Height = 2100; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a Integrity measure
-        consensus.BIP66Height = 2100; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894 Integrity measure
+        consensus.BIP65Height = 1700; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a Integrity measure
+        consensus.BIP66Height = 1700; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894 Integrity measure
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 0.5 * 24 * 60 * 60; // 0.5 days
         consensus.nPowTargetSpacing = 8 * 60;
