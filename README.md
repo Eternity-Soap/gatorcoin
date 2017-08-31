@@ -44,4 +44,4 @@ If you aren't familiar with the term, mining is the process by which the network
 
 [Mining Instructions](doc/mining.md)
 
-[Gatorocin Mining Pool](http://165.227.127.93/)
+[Gatorcoin Mining Pool](http://165.227.127.93/)
