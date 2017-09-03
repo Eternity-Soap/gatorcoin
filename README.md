@@ -39,6 +39,20 @@ Well, you can start by telling your friends and having their friends tell their 
 
 Perhaps of highest importance though is actually using it. Gatorcoins aren't doing anyone any good by being stashed away. Have fun with them by accepting/offering them as payment for mundane thing such as help with classwork and such. 
 
+# Other Utilities
+
+## Paper Wallet Generator
+
+I've forked WalletGenerator.net and added Gatorcoin support for those who might want to make them. You will need to download the repository either as a zip file or with the clone command and execute the index.html file that comes with it (this can usually just be done by double clicking on it). If you are unfamiliar with the concept of a paper wallet, a cryptocurrency wallet is composed of two keys: a public key (your receiving address) and a private key (used to spend coins). A paper wallet is literally a piece of paper with this information recorded, usually also accompanied by QR codes to quickly get the keys in a digital format. To access the funds on a paper wallet, go to the debug console accessable via the help tab of the client and type the collowing command: `importprivkey yourprivatekeyhere`. Note that after this you should discard the wallet. Gatorcoin isn't the default currency (bitcoin is), so you will need to locate Gatorcoin in the list of cryptocurrencies in the lower right of the generator window.
+
+[Wallet Generator](https://github.com/schyczewski/WalletGenerator.net).
+
+## Blockchain Explorer
+
+I've set up an Iquidus block explorer that works with Gatorcoin. For those who don't know, a block explorer allows you to see all of the transaction on the network, how many per block, the richest addresses on the network, etc. They can be useful for determining if a transaction you sent was properly confirmed as well as do things such as see the amount stored on a paper wallet.
+
+[Block Explorer](http://165.227.127.93:3001/)
+
 ## Mining
 If you aren't familiar with the term, mining is the process by which the network of cryptocurrencies like gatorcoin process transactions and ensure integrity. Without miners, the network will stagnate and die. The main incentive for mining is receiving newly generate Gatorcoins. As mentioned above, each block found yields 16 new coins that go the the person(s) who generated it. If you're interested in mining, I've created a guide below for you to use.   
 
