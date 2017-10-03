@@ -1,3 +1,5 @@
+As of October, the blockchain has completely stagnated and the nodes that were holding the network together with toothpics and glue failed and went offline. As such, gatorcoin is dead for all intents and purposes. If you want to play with the source code and attempt to resurrect it, feel free.
+
 Copyright (c) 2009-2014 Bitcoin Developers Copyright (c) 2011-2014 Litecoin Developers (c) 2017 Florida Man 
 
 # What is Gatorcoin?
