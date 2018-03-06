@@ -35,7 +35,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x538017edc66ba7f7bdda94b61b8443adabd4e0e6b62501de81040260b29f9646");
+uint256 hashGenesisBlock("0xfdc495360b4673193c68b5df1849902cd86268624effe617924ac68bb0bc8de4");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Gatorcoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2746,7 +2746,7 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 0x31;
         pchMessageStart[2] = 0x17;
         pchMessageStart[3] = 0x3c;
-        hashGenesisBlock = uint256("0x8877a1db81fb863b3ef0ad4c5d6d53dfde5a4aae7b3eb0b54bea55514e54d3e4");
+        hashGenesisBlock = uint256("0x459df0577e162a5a33269190380e65348af11f362386738d2d28e8cc294ffe99");
     }
 
     //
@@ -2779,7 +2779,7 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "8/8/17 With NEH grant, libraries preserve pages of the past.";
+        const char* pszTimestamp = "UF RANKED IN THE TOP 10 FOR PUBLIC UNIVERSITIES";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2791,14 +2791,14 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1502311635;
+        block.nTime    = 1520360102;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 2086684488;
+        block.nNonce   = 2090287169;
 
         if (fTestNet)
         {
-            block.nTime    = 1502225403;
-            block.nNonce   = 389338943;
+            block.nTime    = 1520360070;
+            block.nNonce   = 389373054;
         }
 
         //// debug print
@@ -2806,9 +2806,9 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x36f2fdb78f0702f61eadc6a78bfadd8cae9c5399c77b7e3f6a3f799d8f762b0a"));
+        assert(block.hashMerkleRoot == uint256("0x96205a4335f873316cd111a03dc72a8173743785efa44cdfc88f5f70b3c86795"));
         //Begin genesis code
-        if (true && block.GetHash() != hashGenesisBlock)
+        if (false && block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
