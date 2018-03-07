@@ -1,10 +1,10 @@
-Copyright (c) 2009-2014 Bitcoin Developers Copyright (c) 2011-2014 Litecoin Developers (c) 2017 Florida Man
-Note: A client based off of litecoin 0.14 is currently in the works and can be seen in the 0.14 branch. I'm nearly ready to create release binaries, but in the meantime you can still use the available windows binaries. 
+Copyright (c) 2009-2014 Bitcoin Developers Copyright (c) 2011-2014 Litecoin Developers (c) 2018 Florida Man
+Blockchain restarted using v0.8. If the network develops enough, a client based off of the contemporary LTC version will be made.  
 
 # What is Gatorcoin?
 Gatorcoin is a very simple clone of Litecoin v0.8.7.5. While it functions almost identically to Litecoin, its network and blockchain are completely independent. It came into being when I decided to make a cryptocurrency clone to see if I could and made it UF themed because why not. 
 
-# [Latest Release](https://github.com/schyczewski/gatorcoin/releases/tag/v0.1)
+# [Latest Release](https://github.com/schyczewski/gatorcoin/releases/tag/v0.8.0)
 
 # Gatorcoin Properties:
 - P2P port is 1853 after year of school's founding
